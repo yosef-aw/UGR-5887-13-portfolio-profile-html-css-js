@@ -28,10 +28,9 @@ header nav a{
     padding:3rem 1rem;
     justify-content: space-around;
     box-shadow: 6px 6px 10px rgba(111, 111, 111,0.6),-6px -6px 10px rgba(111, 111, 111,0.6);
-    background-color: var(--secondaryColor);
+    background-color: rgba(93, 81, 81,0.3);
     gap: 0px;
     margin: auto;
-    color: var(--primaryColor);
     height: 0px; 
 }
 .footer__socials{
