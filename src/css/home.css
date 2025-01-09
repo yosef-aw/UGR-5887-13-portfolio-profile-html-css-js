@@ -1,0 +1,25 @@
+.top-part{
+    display: flex;
+    gap: 30px;
+}
+.top-part img {
+    border-radius: 50%;
+}
+.desc{
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+} 
+.desc1{
+    margin-top: 150px;
+}
+p{
+    font-size: 20px;
+}
+.main-content{
+    margin: 30px;
+}
+.project h4{
+    margin-top: 0px;
+    padding-top: 0px;
+}

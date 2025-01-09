@@ -1,0 +1,91 @@
+.main-content--contact{
+    display: block;
+    width: 100%;
+}
+.feedback-form{
+    width: 70%;
+    margin-top: 5rem;
+    margin-bottom: 3    rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    box-shadow: 1px -1px 10px rgba(5, 5, 5,0.1),-1px 1px 10px rgba(5, 5, 5,0.1);
+}
+.feedback-form form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    padding: 2rem;
+    background-color: rgba(104, 150, 235,0.3);
+}
+.feedback-form form div{
+    display: flex;
+    flex-direction: column;
+}
+.feedback-form form div input{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    height: 2rem;
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+}
+
+
+.heading{
+    font-size: 1.6rem;
+    color: rgb(107, 107, 107);
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+.btn{
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: white;
+    margin: 2rem auto;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn:hover{
+    color: white;
+    background-color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.contact-info{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info__table{
+    margin: 3rem auto;
+}
+
+.contact-info__table td{
+    padding: 1rem;
+    box-shadow: 1px 1px 5px rgba(25, 25, 25,0.2);
+    overflow-wrap: break-word;
+}
+
+.audio{
+    margin: 2rem auto;
+    width: fit-content;
+}
+
+.audio audio{
+    border-radius: 45%;
+    box-shadow: 1px 1px 5px rgba(25, 25, 25,0.2);
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

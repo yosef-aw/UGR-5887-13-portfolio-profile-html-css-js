@@ -5,6 +5,8 @@
     <meta name="smart jobs" content="smart jobs search jobs">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/common.css">
     <title>Contact</title>
 </head>
 
@@ -15,42 +17,56 @@
             <a  href="aboutme.html" >Aboutme</a>
             <a  href="projects.html" >Projects</a>
             <a  href="skills.html" >Skills</a>
-            <a  href="contact.html"> Contact</a>
+            <a  href="contact.html" class="home"> Contact</a>
         </nav>
     </header>
 
-    <main >
+    <main class="main-content main-content--contact">
 
-        <section >
+        <section  class="contact-info" >
 
-            <div >Contact Info</h3>
-                <table>
+            <div class="contact"><h3>Contact Info</h3></div>
+                <table class="contact-info__table">
                     <tr><td>Name:</td><td><address>Yosef Aweke</address></td></tr>
                     <tr><td>Phone:</td><td>+2519673904872</td></tr>
                     <tr><td>Email:</td><td>yosefaweke4@gmail.com</td></tr>
-                    <tr><td><audio src="./audio/contact.mp3" alt="our contact information in audio" controls></audio></td></tr>
                 </table>
             </div>
+            <div class="audio audio--contact">
+                <audio src="./audio/contact.mp3" alt="our contact information in audio" controls></audio>
+            </div>
 
-            <div >
+            <div class="feedback-form" >
                 <form action="submit">
+                        
+                    <div>
+                        <label for="first-name">Full Name </label>
+                        <p class="error" id="error-first"></p>
+                        <input type="text" name="first-name" id="fullname" required><br>
                     
-                    <label for="full-name">Full Name: </label>
-                    <input type="text" name="full-name" id="full-name" required><br>
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email"><br>
-                    <label for="comment">Comment: </label>
-                    <input type="text" name="comment" id="comment"><br>
+                    </div>
+                    
+                    <div>
+                        <label for="company-email">Email</label>
+                        <p class="error" id="error-comp-email"></p>
+                        <input type="email" name="company-email" id="email"><br>
+                    </div> 
 
-                    <button type="submit">Submit</button>
+                    <div>
+                        <label for="comment">Comment* </label>
+                        <p class="error" id="error-comment"></p>
+                        <input type="text" name="comment" id="comment" required><br>
+                    </div>
+
+                    <button class="btn btn--submit" type="button" onclick="validateFeedback()">Submit</button>
                 </form>
             </div>
         </section>
 </main>
 
     
-    <footer> 
-        <div >
+    <footer class="footer"> 
+        <div class="footer__socials">
             <a href="http://facebook.com/"><img width="40px" src="./images/fb.png" alt="facebook icon"></a>
             <a href="http://instagram.com/"><img width="40px" src="./images/ig.svg" alt="instagram icon"></a>
             <a href="http://telegram.com/"><img width="40px" src="./images/tg.png" alt="telegam icon"></a>
@@ -61,7 +77,7 @@
     </footer>
 
     
-    
+    <script src="js/index.js"></script>
 </body>
 
 </html> 
